@@ -1,14 +1,14 @@
 import React, { Fragment,useState,useEffect } from 'react'
-import { Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
-import { useHistory  } from 'react-router-dom'
-import Navbar from '../navbar/Navbar';
-import MenuNavegacion from './MenuNavegacion'
-import {Button} from 'reactstrap'
-import {NavLink} from 'react-router-dom'
+import {  ModalHeader} from 'reactstrap';
+//import { useHistory  } from 'react-router-dom'
+//import Navbar from '../navbar/Navbar';
+//import MenuNavegacion from './MenuNavegacion'
+//import {Button} from 'reactstrap'
+//import {NavLink} from 'react-router-dom'
 import './InicioSegunRol.css';
 function InicioSegunRol(props){
     const [user, setUser] = useState([]);
-    const [ flag, setFlag] = useState(false);
+    //const [ flag, setFlag] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
             try {

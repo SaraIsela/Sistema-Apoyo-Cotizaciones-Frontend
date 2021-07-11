@@ -29,16 +29,16 @@ function Navbar() {
 
     return(
         <> 
-          {(window.location.pathname=="/ingresoCodigo") ? 
+          {(window.location.pathname==="/ingresoCodigo") ? 
           (
             <nav className="navbar navbar-info justify-content-between" id="cabecera">
-            <h1> Sistema de Cotizaciones </h1>
+            <h2>Sistema de Cotizaciones </h2>
             </nav>
           ):(
             (user === null) ? 
                 (<div>
                 <nav className="navbar navbar-info justify-content-between" id="cabecera">
-                    <h1> Sistema de Cotizaciones </h1>
+                    <h3>Sistema de Cotizaciones </h3>
                     <Button type="button" color="primary" onClick={abrirModal}>
                         Iniciar Sesión
                     </Button>

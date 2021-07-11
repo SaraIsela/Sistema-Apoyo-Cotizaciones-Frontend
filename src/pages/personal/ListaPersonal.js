@@ -74,7 +74,7 @@ function ListaPersonal(){
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">CI</th>
+                                    <th scope="col">Ci</th>
                                     <th scope="col">Telefono</th>
                                     <th scope="col">Rol</th>
                                 </tr>

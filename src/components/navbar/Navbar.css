@@ -1,18 +1,19 @@
 #cabecera{
-    background :dodgerblue;
+    background :rgb(12, 102, 175);
     color: white;
-    font-family: Lato; 
     border-width: 5px;
     border-color: black;
 }
 
 #userImg{
-    color: white;
+    color: rgba(19, 18, 18, 0.993);
 }
 
 #navmenu{
     border: 15px;
+    font-family: 'Roboto', sans-serif;
     border-color: black;
+    background:cornsilk;
 }
 
 a.nav-link{
@@ -20,5 +21,10 @@ a.nav-link{
 }
 a.nav-link:hover{
     background-color: #e5e9f2;
-    color: #47525e; 
+    color: #3479c4; 
+}
+
+.h2{
+    font-family: 'Roboto', sans-serif;
+    
 }

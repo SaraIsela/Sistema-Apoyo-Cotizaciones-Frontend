@@ -1,7 +1,7 @@
 #cabecera{
     background :dodgerblue;
     color: white;
-    font-family: Lato; 
+    font-family: 'Roboto';
     border-width: 5px;
     border-color: black;
 }
@@ -78,4 +78,8 @@ a.nav-link:hover{
   
   .dropdown:hover .dropbtn {
     background-color: #e5e9f2;
+  }
+
+  .nav{
+background-color: #47525e;
   }

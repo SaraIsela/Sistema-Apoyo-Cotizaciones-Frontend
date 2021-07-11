@@ -3,7 +3,7 @@ import { PersonFill,PersonCircle,BoxArrowRight, HouseDoorFill, PersonBadgeFill} 
 import './MenuNavegacion.css';
 import ModalSeleccionRol from './ModalSeleccionRol';
 import {NavLink} from 'react-router-dom'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory} from 'react-router-dom'
 import {Button} from 'reactstrap'
 function MenuNavegacion (){
 
@@ -100,7 +100,7 @@ function MenuNavegacion (){
             if(permission.namePermission==="Administar roles"){
                 setAdimnistrarRoles(true)
             }
-            if(permission.namePermission=="Ver Personal"){
+            if(permission.namePermission==="Ver Personal"){
                 setPersonal(true)
             }
         })
@@ -138,10 +138,10 @@ function MenuNavegacion (){
     },[])
     return(
         <>
-         {(bandera!=null | numRoles == 1)?(
+         {(bandera!=null | numRoles === 1)?(
            <div>   
            <nav className="navbar navbar-light justify-content-between" id="cabecera">
-               <h1> Sistema de Cotizaciones </h1>
+               <h2> Sistema de Cotizaciones</h2>
                <div>
                    <li className="nav-container--item dropdown" id="person">
                            <div className="dropdown">

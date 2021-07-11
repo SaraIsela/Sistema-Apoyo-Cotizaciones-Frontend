@@ -117,10 +117,10 @@ function EditarRol (props){
             setRol(props.rol)
         }
         getPermisos();
-    }, [props.abrirEditor]);
+    }, [props.abrirEditor, props.rol]);
     useEffect(function(){
         permissionsRef.current = props.rol.permissions;
-    },[selectedCheckboxes]);
+    },[props.rol.permissions, selectedCheckboxes]);
     return (
         <>
         <Modal isOpen={props.abrirEditor} style={modalStyles}>
@@ -180,14 +180,14 @@ function EditarRol (props){
                                 permissions.map((permission,index)=>{
                                     return (
                                         <tr>
-                                        <td scope="row">
+                                        <th scope="row">
                                              <Checkbox 
                                              initialState={props.rol.permissions.includes(permission.id)} 
                                              id={index+1} 
                                              value={permission.id}
                                              onChange={onCheckboxClicked} 
                                              />
-                                        </td>
+                                        </th>
                                         <th scope="row">{index+1}</th>
                                         <td>{permission.namePermission}</td> 
                                         </tr>

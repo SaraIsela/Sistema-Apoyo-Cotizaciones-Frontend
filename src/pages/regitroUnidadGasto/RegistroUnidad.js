@@ -92,7 +92,7 @@ const RegistroUnidad = (props) => {
         <Modal isOpen={props.abierto} style={modalStyles}>
         <form onSubmit={handleSubmit(onSubmit)}>
             <ModalHeader toggle={closeModal}>
-            Agregar Unidad de Gasto
+            Registrar Unidad de Gasto
             </ModalHeader>  
             <div className="modal-body">
             <div className="form-rom">

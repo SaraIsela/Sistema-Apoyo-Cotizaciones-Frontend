@@ -3,6 +3,7 @@
     margin: 0 auto;
     border: 1px solid #999; 
     border-collapse: collapse;
+    background-color: cornsilk;
 }
 #fila{ 
     padding: 5px 10px;
